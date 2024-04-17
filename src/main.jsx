@@ -7,7 +7,7 @@ import { Provider } from 'react-redux'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter basename='ecommerce'>
+    <BrowserRouter basename='Ecommerce'>
       <Provider store={store}>
         <App />
       </Provider>
