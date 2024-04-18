@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { useSelector } from 'react-redux'
-
 import images from '../constants/images'
 import { Search } from './index'
 import { selectCart } from '../redux/slices/cartSlice'
@@ -14,13 +13,10 @@ const Header = () => {
   return (
     <div className="header">
       <div className="container">
+        <div className='header_top'>
           <Link to="/">
             <div className="header__logo">
               <img src={images.logo} alt="Pizza logo" />
-              {/* <div>
-              <h1>React Pizza</h1>
-              <p>The taste you will not forget</p>
-            </div> */}
             </div>
           </Link>
           <Search />
@@ -61,7 +57,14 @@ const Header = () => {
             </Link>
           </div>
         </div>
+        <nav className='header-nav'>
+          <ul className='header_links'>
+           <Link to='/'><li>Home</li></Link>
+           <Link to='/cart'><li>Cart</li></Link>
+          </ul>
+        </nav>
       </div>
+    </div>
   )
 }
 

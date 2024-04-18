@@ -12,6 +12,7 @@ import pizza01 from '../assets/image-2.jpg'
 import pizza02 from '../assets/image-5.jpg'
 import pizza03 from '../assets/image-6.jpg'
 import pizza04 from '../assets/image-7.jpg'
+import footerLogo from '../assets/footer-logo.png'
 
 export default {
   arrowTop,
@@ -27,4 +28,5 @@ export default {
   pizza02,
   pizza03,
   pizza04,
+  footerLogo
 }

@@ -2,14 +2,37 @@
 
 .header {
   border-bottom: 1px solid $gray-line;
-  padding: 40px 0;
+  padding: 40px 0 25px;
 
   .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    @media (max-width: 768px) {
-      flex-direction: column;
+    .header_top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+      }
+    }
+
+    .header-nav {
+      padding-top: 20px;
+    }
+
+    .header_links {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      li {
+        border-radius: 30px;
+        margin-right: 10px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: .4s;
+        &:hover{
+          color: #fe5f1e;
+        }
+      }
     }
   }
 
@@ -37,6 +60,63 @@
     p {
       color: #7b7b7b;
       padding-bottom: 10px;
+    }
+  }
+}
+
+.footer {
+  background-color: #fe5f1e;
+
+  .container {
+    padding: 40px 0px 0;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    .footer-layout {
+      padding: 0 0 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .brand_download {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        p {
+          font-size: 20px;
+          color: #ffff;
+          font-family: "Nunito", Roboto, system-ui, Tahoma, sans-serif;
+        }
+
+        img {
+          width: 8.6rem;
+          height: 2.5rem;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .footer_links {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+
+      li {
+        color: #fff;
+      }
+    }
+
+    .copy-right_text {
+      font-size: 14px;
+      display: flex;
+      -webkit-box-pack: center;
+      justify-content: center;
+      padding: 1.4em;
+      border-top: 1px dotted rgb(82, 98, 116);
+      color: rgb(255, 255, 255);
     }
   }
 }
