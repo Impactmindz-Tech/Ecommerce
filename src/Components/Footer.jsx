@@ -24,7 +24,6 @@ const Footer = () => {
                                     <li>Privacy Policy</li>
                                     <li>Faq</li>
                                     <li>Terms & Conditions</li>
-                                    <li>Nutritional Information</li>
                                     <li>Feedback</li>
                                 </ul>
                             </nav>
@@ -38,7 +37,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className='copy-right_text'>
-                        All Rights Reserved. Copyright © Jubilant FoodWorks Ltd.
+                        All Rights Reserved. Copyright © Pizza Bite.
                     </div>
                 </div>
             </div>
